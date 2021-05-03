@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html lang="ko">
+
+<%- include('../header/header'); %>
+
+<body>
+<!--[if lt IE 7]>
+<p class="cm-alert-ie">현재 웹브라우저에서는 사이트가 정상적으로 표시되지 않을 수 있습니다. <strong><a href="http://browsehappy.com/" target="_blank">여기를 클릭</a></strong>하여 웹브라우저를 업그레이드 하세요.</p>
+<![endif]-->
+<!-- accessibility -->
+<div class="cm-accessibility">
+	<a href="#mainContainer">본문바로가기</a>
+</div>
+<!-- //accessibility -->
+
+<!-- code -->
+<div id="wrap">
+	
+    <%- include('../header/navi'); %>
+
+	<!-- container -->
+	<div id="mainContainer">
+        <!-- visual -->
+        <section id="visual" style="background:url(/images/header.png) no-repeat center center; background-size: cover;">
+			<div class="sub-visual-box area">
+				<div class="sub-visual-inner">
+					<h2>Contact</h2>
+				</div>
+			</div>
+		</section>
+        <!-- //visual -->
+		<!-- middleArea -->
+		<div id="middleArea" class="area">
+			<div class="location_con width1280">
+                <div class="loca_info">
+                    <p class="sub_txt">서울 강북구 한천로 1003, 포르텔오피스텔 1001호</p>
+                    <p class="sub_txt">02-902-0292</p>
+                    <!-- <p class="sub_txt">010-1111-1111</p> -->
+                </div>
+            
+                <div class="map">
+                    <!-- * 카카오맵 - 지도퍼가기 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1617728735823" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                    <!--
+                        2. 설치 스크립트
+                        * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                    -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1617728735823",
+                            "key" : "258tk",
+                            "mapWidth" : "1210",
+                            "mapHeight" : "400"
+                        }).render();
+                    </script>
+                </div>
+            
+                <div class="loca_way">
+                    <dl class="car">
+                        <dt class="sub_sstitle">승용차 이용 시</dt>
+                        <dd>
+                            <p><span class="num">1</span><strong>경부고속도로 이용 시</strong>판교IC(톨게이트) 나온 뒤 약 900m 직진 → ‘광장로, 판교역(내곡)’ 방면으로 좌회전 후 약 1km 이동</p>
+                            <p><span class="num">2</span><strong>분당-수서간 도시고속화도로 이용 시</strong>벌말사거리에서 ‘안양, 판교테크노밸리, 판교 IC’ 방면으로 우회전(상향선의 경우 좌회전) 후 약 800m 이동 → ‘백현동, 판교역’ 방면으로 좌회전 후 약 280m 이동</p>
+                        </dd>
+                    </dl>
+                    <dl class="subway">
+                        <dt class="sub_sstitle">지하철 이용 시</dt>
+                        <dd>
+                            <p><span class="subway_line">분당선</span>판교역 1번 출구로 나온 후, 도보 10분</p>
+                        </dd>
+                    </dl>
+                    <dl class="bus">
+                        <dt class="sub_sstitle">버스 이용 시</dt>
+                        <dd>
+                            <p><span class="num">1</span><strong>낙생육교 하차  :</strong> 103, 303, 340-1, 1005, 1005-1, 1111, 1121, 1150, 1241, 1500-2, 3330, 3500, 5500-1,7007-1, 7200, 9000, 9001, 9300, 1151, 8106, 9401</p>
+                            <p><span class="num">2</span><strong>차그룹컨소시엄(상행) 한국무역정보통신(하행) 하차 :</strong> 101, 330, 350, 380, 390, 4000(수원-성남), 9005(잠실-성남)</p>
+                            <p><span class="num">3</span><strong>봇들마을5단지 하차 :</strong> 5, 55, 4000(수원-성남), 9414(삼성-죽전)</p>
+                            <p><span class="num">4</span><strong>동안교 하차 :</strong> 280, 390</p>
+                        </dd>
+                    </dl>
+                </div>
+            
+            </div>
+		</div>
+		<!-- //middleArea -->
+	</div>
+	<!-- //container -->
+	
+    <%- include('../footer/footer'); %>
+
+</div>
+<!-- //code -->
+
+
+</body>
+</html>
